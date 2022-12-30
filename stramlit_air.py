@@ -286,9 +286,6 @@ if option=="AIR_QUALITY_WEB_APP":
             fig = px.line(data, x='Date', y="AQI", color='Quality')
             st.plotly_chart(fig)
             #---------------------------------------
-            fig, ax = plt.subplots(nrows=6,  ncols=6, figsize=(8,8))
-            sns.pairplot(data, hue = 'AQI')
-            st.pyplot(fig)
 
 
 
