@@ -14,6 +14,7 @@ with st.sidebar:
 #option = st.sidebar.radio("SELECT WHAT YOU WANT", options=["URL SHORTNER", "IMAGE EDITOR", "WORD DENSITY CHECKER", "AUDIO TO TEXT CONVERTER"],ic)
 #------------------------------------------------------
 
+st.write("check out this [link](https://share.streamlit.io/mesmith027/streamlit_webapps/main/MC_pi/streamlit_app.py)")
 #-------------------------------------------------------
 if option=="AIR_QUALITY_WEB_APP":
     st.sidebar.markdown("-----------")
@@ -24,13 +25,17 @@ if option=="AIR_QUALITY_WEB_APP":
     st.sidebar.markdown("1.Please download the data from the standard site of the government and the data downloaded should be in excel form only")
     st.sidebar.markdown("2.Please download the data in two separate excel sheets one sheet download data (CO, Ozone for 8 hours) and the other sheet should have minimum (PM2.5, PM10, SO2, NO2) for 24hour")
     st.sidebar.markdown("3.Do not edit data Please paste your data here as is")
+    st.sidebar.markdown("-------------")
+    st.sidebar.markdown(f"<h3 style='text-align: center;'>Website Links For Download Data</h3>", unsafe_allow_html=True)
+    st.sidebar.write("1.[link] (https://app.cpcbccr.com/ccr/#/caaqm-dashboard-all/caaqm-landing)")
+    st.sidebar.write("2.[link](https://airquality.cpcb.gov.in/ccr/#/caaqm-dashboard-all/caaqm-landing/data)")
     #-------------------------------------------
     st.markdown("<h1 style='text-align: center;'>AIR QUALITY MEASUREMENT WEB APP(KP MODEL)</h1>", unsafe_allow_html=True)
     st.markdown("----------------")
-    st.markdown(f"<h6 style='text-align: center;'>First File(Which contain CO and Ozone data per annum)</h6>", unsafe_allow_html=True)
+    st.markdown(f"<h6 style='text-align: center;'>First File(Which contain CO and Ozone data per day)</h6>", unsafe_allow_html=True)
     audio_1 = st.file_uploader("Upload Your First File", type=["xlsx"])
     st.markdown("    ")
-    st.markdown(f"<h6 style='text-align: center;'>Second File(Which contain PM2.5 and other pollutant per annum data)</h6>", unsafe_allow_html=True)
+    st.markdown(f"<h6 style='text-align: center;'>Second File(Which contain PM2.5 and other pollutant per day data)</h6>", unsafe_allow_html=True)
     audio_2 = st.file_uploader("Upload Your Second File", type=["xlsx"])
     st.markdown("   ")
     a=st.button(label="Click On It")
