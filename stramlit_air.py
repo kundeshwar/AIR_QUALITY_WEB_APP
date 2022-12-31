@@ -14,7 +14,6 @@ with st.sidebar:
 #option = st.sidebar.radio("SELECT WHAT YOU WANT", options=["URL SHORTNER", "IMAGE EDITOR", "WORD DENSITY CHECKER", "AUDIO TO TEXT CONVERTER"],ic)
 #------------------------------------------------------
 
-st.write("check out this [link](https://share.streamlit.io/mesmith027/streamlit_webapps/main/MC_pi/streamlit_app.py)")
 #-------------------------------------------------------
 if option=="AIR_QUALITY_WEB_APP":
     st.sidebar.markdown("-----------")
@@ -27,8 +26,8 @@ if option=="AIR_QUALITY_WEB_APP":
     st.sidebar.markdown("3.Do not edit data Please paste your data here as is")
     st.sidebar.markdown("-------------")
     st.sidebar.markdown(f"<h3 style='text-align: center;'>Website Links For Download Data</h3>", unsafe_allow_html=True)
-    st.sidebar.write("1.[link] (https://app.cpcbccr.com/ccr/#/caaqm-dashboard-all/caaqm-landing)")
-    st.sidebar.write("2.[link](https://airquality.cpcb.gov.in/ccr/#/caaqm-dashboard-all/caaqm-landing/data)")
+    st.sidebar.write("1. [link](https://app.cpcbccr.com/ccr/#/caaqm-dashboard-all/caaqm-landing)")
+    st.sidebar.write("2. [link](https://airquality.cpcb.gov.in/ccr/#/caaqm-dashboard-all/caaqm-landing/data)")
     #-------------------------------------------
     st.markdown("<h1 style='text-align: center;'>AIR QUALITY MEASUREMENT WEB APP(KP MODEL)</h1>", unsafe_allow_html=True)
     st.markdown("----------------")
